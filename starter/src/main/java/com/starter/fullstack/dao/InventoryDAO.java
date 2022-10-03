@@ -51,8 +51,10 @@ public class InventoryDAO {
    * @return Created/Updated Inventory.
    */
   public Inventory create(Inventory inventory) {
-    // TODO
-    return null;
+    // insert new inventory object into mongo collection
+    // set id to null
+    inventory.setId(null);
+    return this.mongoTemplate.save(inventory);
   }
 
   /**

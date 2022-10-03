@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.starter.fullstack.dao.InventoryDAOTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.589 s - in com.starter.fullstack.dao.InventoryDAOTest

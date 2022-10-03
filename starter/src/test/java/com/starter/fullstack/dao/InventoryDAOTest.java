@@ -26,7 +26,8 @@ public class InventoryDAOTest {
   private InventoryDAO inventoryDAO;
   private static final String NAME = "Amber";
   private static final String PRODUCT_TYPE = "hops";
-
+  private static final String ID = "testID";
+ 
   @Before
   public void setup() {
     this.inventoryDAO = new InventoryDAO(this.mongoTemplate);
@@ -48,5 +49,21 @@ public class InventoryDAOTest {
     this.mongoTemplate.save(inventory);
     List<Inventory> actualInventory = this.inventoryDAO.findAll();
     Assert.assertFalse(actualInventory.isEmpty());
+  }
+
+ /**
+ * test create method.
+ */  
+  @Test
+  public void create() {
+    Inventory inventory = new Inventory();
+    inventory.setName(NAME);
+    inventory.setProductType(PRODUCT_TYPE);
+    inventory.setId(ID);
+    Inventory actualInventoryItem = this.inventoryDAO.create(inventory);
+    Assert.assertNotNull(actualInventoryItem);
+    Assert.assertEquals(inventory.getProductType(), actualInventoryItem.getProductType());
+    Assert.assertEquals(inventory.getName(), actualInventoryItem.getName());
+    Assert.assertNotEquals(actualInventoryItem.getId(), ID);
   }
 }

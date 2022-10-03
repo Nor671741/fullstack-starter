@@ -1,0 +1,18 @@
+#Mon Oct 03 11:33:14 EDT 2022
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/config/WebSecurityProperties.java=1663639057590
+configuration*?=2C44163F766FC21B6DDE4FCE725A8B847DD7E070
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/api/Inventory.java=1663639057586
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/rest/ProductController.java=1663639057594
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/config/WebSecurityConfig.java=1663639057590
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/resources/application.properties=1663639057594
+/home/sarah.plazio/projects/fullstack-starter/starter/src/test/java/com/starter/fullstack/config/EmbedMongoClientOverrideConfig.java=1663639057594
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/dao/ProductDAO.java=1663639057590
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/dao/InventoryDAO.java=1664806695181
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/StarterApp.java=1663639057584
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/rest/InventoryController.java=1663639057590
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/api/Product.java=1663639057586
+/home/sarah.plazio/projects/fullstack-starter/starter/src/test/java/com/starter/fullstack/rest/ProductControllerTest.java=1663639057602
+/home/sarah.plazio/projects/fullstack-starter/starter/src/test/java/com/starter/fullstack/dao/ProductDAOTest.java=1663639057602
+/home/sarah.plazio/projects/fullstack-starter/starter/src/test/java/com/starter/fullstack/dao/InventoryDAOTest.java=1664811074508
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/api/UnitOfMeasurement.java=1663639057586
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/config/StarterConfig.java=1663639057590

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>InventoryDAO.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">starter-fullstack</a> &gt; <a href="index.source.html" class="el_package">com.starter.fullstack.dao</a> &gt; <span class="el_source">InventoryDAO.java</span></div><h1>InventoryDAO.java</h1><pre class="source lang-java linenums">package com.starter.fullstack.dao;
+
+import com.starter.fullstack.api.Inventory;
+import java.util.List;
+import java.util.Optional;
+import javax.annotation.PostConstruct;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.index.Index;
+import org.springframework.data.mongodb.core.index.IndexOperations;
+import org.springframework.util.Assert;
+
+/**
+ * Inventory DAO
+ */
+public class InventoryDAO {
+  private final MongoTemplate mongoTemplate;
+  private static final String NAME = &quot;name&quot;;
+  private static final String PRODUCT_TYPE = &quot;productType&quot;;
+
+  /**
+   * Default Constructor.
+   * @param mongoTemplate MongoTemplate.
+   */
+<span class="fc" id="L25">  public InventoryDAO(MongoTemplate mongoTemplate) {</span>
+<span class="fc" id="L26">    Assert.notNull(mongoTemplate, &quot;MongoTemplate must not be null.&quot;);</span>
+<span class="fc" id="L27">    this.mongoTemplate = mongoTemplate;</span>
+<span class="fc" id="L28">  }</span>
+
+  /**
+   * Constructor to build indexes for rate blackout object
+   */
+  @PostConstruct
+  public void setupIndexes() {
+<span class="fc" id="L35">    IndexOperations indexOps = this.mongoTemplate.indexOps(Inventory.class);</span>
+<span class="fc" id="L36">    indexOps.ensureIndex(new Index(NAME, Sort.Direction.ASC));</span>
+<span class="fc" id="L37">    indexOps.ensureIndex(new Index(PRODUCT_TYPE, Sort.Direction.ASC));</span>
+<span class="fc" id="L38">  }</span>
+
+  /**
+   * Find All Inventory.
+   * @return List of found Inventory.
+   */
+  public List&lt;Inventory&gt; findAll() {
+<span class="fc" id="L45">    return this.mongoTemplate.findAll(Inventory.class);</span>
+  }
+
+  /**
+   * Save Inventory.
+   * @param inventory Inventory to Save/Update.
+   * @return Created/Updated Inventory.
+   */
+  public Inventory create(Inventory inventory) {
+    // insert new inventory object into mongo collection
+    // set id to null
+<span class="fc" id="L56">    inventory.setId(null);</span>
+<span class="fc" id="L57">    return this.mongoTemplate.save(inventory);</span>
+  }
+
+  /**
+   * Retrieve Inventory.
+   * @param id Inventory id to Retrieve.
+   * @return Found Inventory.
+   */
+  public Optional&lt;Inventory&gt; retrieve(String id) {
+    // TODO
+<span class="nc" id="L67">    return Optional.empty();</span>
+  }
+
+  /**
+   * Update Inventory.
+   * @param id Inventory id to Update.
+   * @param inventory Inventory to Update.
+   * @return Updated Inventory.
+   */
+  public Optional&lt;Inventory&gt; update(String id, Inventory inventory) {
+    // TODO
+<span class="nc" id="L78">    return Optional.empty();</span>
+  }
+
+  /**
+   * Delete Inventory By Id.
+   * @param id Id of Inventory.
+   * @return Deleted Inventory.
+   */
+  public Optional&lt;Inventory&gt; delete(String id) {
+    // TODO
+<span class="nc" id="L88">    return Optional.empty();</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

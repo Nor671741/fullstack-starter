@@ -1,0 +1,11 @@
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/StarterApp.java
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/rest/InventoryController.java
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/config/WebSecurityProperties.java
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/api/Product.java
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/api/Inventory.java
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/rest/ProductController.java
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/config/WebSecurityConfig.java
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/dao/ProductDAO.java
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/dao/InventoryDAO.java
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/api/UnitOfMeasurement.java
+/home/sarah.plazio/projects/fullstack-starter/starter/src/main/java/com/starter/fullstack/config/StarterConfig.java

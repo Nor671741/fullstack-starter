@@ -1,0 +1,4 @@
+/home/sarah.plazio/projects/fullstack-starter/starter/src/test/java/com/starter/fullstack/dao/ProductDAOTest.java
+/home/sarah.plazio/projects/fullstack-starter/starter/src/test/java/com/starter/fullstack/dao/InventoryDAOTest.java
+/home/sarah.plazio/projects/fullstack-starter/starter/src/test/java/com/starter/fullstack/rest/ProductControllerTest.java
+/home/sarah.plazio/projects/fullstack-starter/starter/src/test/java/com/starter/fullstack/config/EmbedMongoClientOverrideConfig.java

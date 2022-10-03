@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+starter-fullstack,com.starter.fullstack.rest,ProductController,0,27,0,0,0,9,0,4,0,4
+starter-fullstack,com.starter.fullstack.rest,InventoryController,4,9,0,0,1,4,1,1,1,1
+starter-fullstack,com.starter.fullstack.api,UnitOfMeasurement,78,0,0,0,10,0,2,0,2,0
+starter-fullstack,com.starter.fullstack,StarterApp,5,5,0,0,2,2,1,2,1,2
+starter-fullstack,com.starter.fullstack.dao,InventoryDAO,6,45,0,0,3,11,3,4,3,4
